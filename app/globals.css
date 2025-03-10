@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+:root {
+  --main: #fff;
+  --overlay: rgba(0, 0, 0, 0.8); /* background color overlay for alert dialogs, modals, etc. */
+
+  --bg: #e3dff2;
+  --bw: #fff; /* white and secondary black e.g. utility class variant would be: bg-[#fff] dark:bg-[#212121] */
+  --blank: #000; /* blank black and white */
+  --border: #000;
+  --text: #000;
+  --mtext: #000; /* text that is placed on background with main color e.g. text color of default button */
+  --ring: #000;
+  --ring-offset: #fff;
+  --gray: #8a8a8a;
+  --yellow: rgb(146 197 253/var(--tw-bg-opacity,1));
+  --transparent: #00000062;
+  --black2: #222222;
+
+  --border-radius: 5px;
+  --box-shadow-x: 4px;
+  --box-shadow-y: 4px;
+  --reverse-box-shadow-x: -3px;
+  --reverse-box-shadow-y: -3px;
+  --base-font-weight: 400;
+  --heading-font-weight: 900;
+
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+}
+
+.dark {
+  --bg: #272733;
+  --bw: #212121;
+  --blank: #fff;
+  --border: #000;
+  --text: #e6e6e6;
+  --mtext: #000;
+  --ring: #fff;
+  --ring-offset: #000;
+
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+}
+.grid-background {
+  background-image: 
+    linear-gradient(to right, hsla(0, 0%, 28%, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, hsla(0, 0%, 28%, 0.25)  1px, transparent 1px);
+  background-size: 70px 70px; /* Tamaño de cada cuadrito */
+  background-color: #cfcfcf;
+}
