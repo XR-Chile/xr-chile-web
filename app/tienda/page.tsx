@@ -7,11 +7,11 @@ const titles = "text-6xl font-bold text-center";
 
 export default function StorePage() {
   return (
-    <div className="flex flex-col items-center">
+    <main className="flex flex-col items-center">
       <h1 className={titles + " mt-20 mb-16"} >Camaras 360</h1>
       <ShopCarousel products={cameras} basis={basis} />
       <h1 className={titles + " mt-4 mb-16"} >PICO</h1>
       <ShopCarousel products={pico} basis={basis} />
-    </div>
+    </main>
   );
 }
