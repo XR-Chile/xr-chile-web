@@ -1,11 +1,11 @@
 import { generateHash } from './products'; // Importar la función generateHash desde products.ts
 
 export interface Project {
-    id: number;         // Identificador único del proyecto
-    title: string;      // Título del proyecto
-    description: string; // Descripción del proyecto
-    image: string;      // Imagen del proyecto
-    text: string;      // Texto del proyecto
+  id: number;         // Identificador único del proyecto
+  title: string;      // Título del proyecto
+  description: string; // Descripción del proyecto
+  image: string;      // Imagen del proyecto
+  text: string;      // Texto del proyecto
 }
 
 const addIDsToProjects = (projects: Omit<Project, 'id'>[]): Project[] => {

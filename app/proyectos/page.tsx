@@ -1,7 +1,7 @@
 import { projects } from '@/app/data/projects'
 import { ProjectCard } from '@/components/modules/project-card';
 
-const titles : string = 
+const titles: string =
   "text-6xl font-bold text-center";
 
 export default function ProjectsPage() {

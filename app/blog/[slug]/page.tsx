@@ -24,10 +24,10 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
       </div>
       <div className="w-full max-w-7xl h-64 md:h-96 lg:h-128 relative">
         <Image
-        src={post.image}
-        alt={post.title} 
-        fill
-        className="object-cover"
+          src={post.image}
+          alt={post.title}
+          fill
+          className="object-cover"
         />
       </div>
       <div className="prose mt-6 max-w-3xl w-full">

@@ -25,8 +25,8 @@ export const Footer = () => (
           <h2 className="text-xl font-bold mb-4 text-white">Redes Sociales</h2>
           <div className="flex gap-6">
             <a href={footer.socials.facebook} target="_blank" rel="noopener noreferrer">
-              <Image 
-                src='/icons/facebook/facebook-24.svg' 
+              <Image
+                src='/icons/facebook/facebook-24.svg'
                 width={24}
                 height={24}
                 alt='facebook'
@@ -34,8 +34,8 @@ export const Footer = () => (
               />
             </a>
             <a href={footer.socials.instagram} target="_blank" rel="noopener noreferrer">
-              <Image 
-                src='/icons/instagram/instagram-24.svg' 
+              <Image
+                src='/icons/instagram/instagram-24.svg'
                 width={24}
                 height={24}
                 alt='instagram'
@@ -43,8 +43,8 @@ export const Footer = () => (
               />
             </a>
             <a href={footer.socials.linkedin} target="_blank" rel="noopener noreferrer">
-              <Image 
-                src='/icons/linkedin/linkedin-24.svg' 
+              <Image
+                src='/icons/linkedin/linkedin-24.svg'
                 width={24}
                 height={24}
                 alt='linkedin'

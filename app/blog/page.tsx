@@ -1,8 +1,8 @@
 import { blogPosts } from '@/app/data/blogPosts';
 import { BlogPostCard } from '@/components/modules/blog-post-card';
 
-const titles : string = 
-  "text-6xl font-bold text-center";
+const titles = "text-6xl font-bold text-center";
+
 export default function BlogPage() {
   return (
     <div className="p-8">
