@@ -7,17 +7,14 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
   // Desenvolver la promesa `params` usando React.use
   const { slug } = React.use(params);
 
-  // Buscar el post correspondiente al slug
   const post = blogPosts.find((post) => post.slug === slug);
 
-  // Si no se encuentra el post, mostrar la página 404
   if (!post) {
     return notFound();
   }
 
-  // Renderizar el post
   return (
-    <div className="p-8 w-full flex flex-col items-center">
+    <section className="p-8 w-full flex flex-col items-center">
       <div className='text-center'>
         <h1 className="text-6xl font-bold mb-2">{post.title}</h1>
         <p className="text-gray-500 mt-2 font-bold mb-12">{post.date}</p>
@@ -33,6 +30,6 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
       <div className="prose mt-6 max-w-3xl w-full">
         <p>{post.content}</p>
       </div>
-    </div>
+    </section>
   );
 }
