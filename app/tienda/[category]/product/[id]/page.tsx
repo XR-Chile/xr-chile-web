@@ -25,7 +25,7 @@ export default function ProductPage({ params }: { params: Promise<{ category: Ca
   }
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center justify-center">
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center">
       <div className="w-full flex-grow flex items-center justify-center">
         <Image
           src={product.image}
@@ -46,6 +46,6 @@ export default function ProductPage({ params }: { params: Promise<{ category: Ca
           <Button className="px-6 py-3 rounded-lg text-xl duration-150"> Comprar </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
