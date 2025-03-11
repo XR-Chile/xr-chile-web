@@ -30,10 +30,10 @@ export default function ProductPage({ params }: { params: Promise<{ category: Ca
         <Image
           src={product.image}
           alt={product.name}
-          width={800} // Ancho máximo de la imagen
-          height={600} // Altura máxima de la imagen
+          width={800}
+          height={600}
           className="w-full h-auto max-h-screen object-contain"
-          quality={100} // Opcional: para mantener la calidad de la imagen
+          quality={100}
         />
       </div>
 
