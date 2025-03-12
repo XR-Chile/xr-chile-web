@@ -1,11 +1,4 @@
-import { generateHash } from "@/lib/utils";
-
-const addIDsToProjects = (projects: Omit<Project, 'id'>[]): Project[] => {
-  return projects.map((project, index) => ({
-    id: generateHash(`${project.title}-${index}`), // Generar un ID único basado en el título y el índice
-    ...project,
-  }));
-}
+import { addIDsToProjects } from "@/lib/utils";
 
 export const projects: Project[] = addIDsToProjects([
   {

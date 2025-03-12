@@ -23,3 +23,11 @@ export const addCategoryAndIDsToProducts = (products: Omit<Product, 'id'>[], cat
     category: category,
   }));
 }
+
+export const addIDsToProjects = (projects: Omit<Project, 'id'>[]): Project[] => {
+  return projects.map((project, index) => ({
+    id: generateHash(`${project.title}-${index}`), // Generar un ID único basado en el título y el índice
+    ...project,
+  }));
+}
+
