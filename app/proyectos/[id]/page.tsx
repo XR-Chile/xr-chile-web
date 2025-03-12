@@ -2,8 +2,14 @@ import { notFound } from 'next/navigation';
 import { projects } from '@/app/data/projects';
 import Image from 'next/image';
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects.find((p) => p.id === Number(params.id));
+export default async function ProjectPage({
+  params
+}: {
+  params: Promise<{ id: string }>
+}) {
+
+  const { id } = await params
+  const project = projects.find((p) => p.id === Number(id));
 
   if (!project) {
     return notFound();
