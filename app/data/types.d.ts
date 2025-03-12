@@ -41,8 +41,3 @@ interface Socials {
   linkedin: string;
 }
 
-enum Category {
-  Camera = 'camera',
-  PICO = 'pico'
-}
-
