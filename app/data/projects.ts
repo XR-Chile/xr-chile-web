@@ -1,4 +1,4 @@
-import { generateHash } from './products'; // Importar la función generateHash desde products.ts
+import { generateHash } from "@/lib/utils";
 
 export interface Project {
   id: number;         // Identificador único del proyecto
