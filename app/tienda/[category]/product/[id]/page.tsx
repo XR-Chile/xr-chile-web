@@ -25,14 +25,13 @@ export default function ProductPage({ params }: { params: Promise<{ category: Ca
   }
 
   return (
-    <section className="relative w-full min-h-screen flex flex-col items-center justify-center">
+    <section className="relative w-full flex flex-col items-center justify-center">
       <div className="w-full flex-grow flex items-center justify-center">
         <Image
           src={product.image}
           alt={product.name}
           width={800}
           height={600}
-          className="w-full h-auto max-h-screen object-contain"
           quality={100}
         />
       </div>
