@@ -1,13 +1,4 @@
-import { generateHash } from "@/lib/utils";
-
-
-const addCategoryAndIDsToProducts = (products: Omit<Product, 'id'>[], category: Category): Product[] => {
-  return products.map((product, index) => ({
-    id: generateHash(`${product.name}-${index}`), // Agregar un índice para evitar colisiones
-    ...product,
-    category: category,
-  }));
-}
+import { addCategoryAndIDsToProducts } from "@/lib/utils";
 import { Category } from "./enums";
 
 export const cameras: Product[] = addCategoryAndIDsToProducts(
