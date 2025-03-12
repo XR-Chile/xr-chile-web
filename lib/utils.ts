@@ -18,7 +18,7 @@ export const generateHash = (str: string): number => {
 
 export const addCategoryAndIDsToProducts = (products: Omit<Product, 'id'>[], category: Category): Product[] => {
   return products.map((product, index) => ({
-    id: generateHash(`${product.name}-${index}`), // Agregar un índice para evitar colisiones
+    id: generateHash(`${product.name}-${index}`),
     ...product,
     category: category,
   }));
@@ -26,7 +26,7 @@ export const addCategoryAndIDsToProducts = (products: Omit<Product, 'id'>[], cat
 
 export const addIDsToProjects = (projects: Omit<Project, 'id'>[]): Project[] => {
   return projects.map((project, index) => ({
-    id: generateHash(`${project.title}-${index}`), // Generar un ID único basado en el título y el índice
+    id: generateHash(`${project.title}-${index}`),
     ...project,
   }));
 }
