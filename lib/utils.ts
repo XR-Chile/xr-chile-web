@@ -14,3 +14,11 @@ export const generateHash = (str: string): number => {
   }
   return Math.abs(hash);
 };
+
+export const addCategoryAndIDsToProducts = (products: Omit<Product, 'id'>[], category: Category): Product[] => {
+  return products.map((product, index) => ({
+    id: generateHash(`${product.name}-${index}`), // Agregar un índice para evitar colisiones
+    ...product,
+    category: category,
+  }));
+}
