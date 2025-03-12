@@ -8,6 +8,7 @@ const addCategoryAndIDsToProducts = (products: Omit<Product, 'id'>[], category: 
     category: category,
   }));
 }
+import { Category } from "./enums";
 
 export const cameras: Product[] = addCategoryAndIDsToProducts(
   [
