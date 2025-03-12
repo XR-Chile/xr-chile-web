@@ -1,12 +1,3 @@
-export interface BlogPost {
-  slug: string;       // Identificador único del post
-  title: string;      // Título del post
-  content: string;    // Contenido del post (puede ser markdown o HTML)
-  date: string;       // Fecha de publicación
-  excerpt: string;    // Resumen del post
-  image: string;      // Imagen destacada
-}
-
 export const blogPosts: BlogPost[] = [
   {
     slug: 'primer-post',

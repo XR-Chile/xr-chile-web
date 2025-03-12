@@ -1,17 +1,5 @@
 import { generateHash } from "@/lib/utils";
 
-export enum Category {
-  Camera = 'camera',
-  PICO = 'pico'
-}
-
-export interface Product {
-  id: number;
-  name: string;
-  price: number;
-  image: string;
-  category?: Category;
-}
 
 const addCategoryAndIDsToProducts = (products: Omit<Product, 'id'>[], category: Category): Product[] => {
   return products.map((product, index) => ({

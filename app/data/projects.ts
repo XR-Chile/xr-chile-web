@@ -1,13 +1,5 @@
 import { generateHash } from "@/lib/utils";
 
-export interface Project {
-  id: number;         // Identificador único del proyecto
-  title: string;      // Título del proyecto
-  description: string; // Descripción del proyecto
-  image: string;      // Imagen del proyecto
-  text: string;      // Texto del proyecto
-}
-
 const addIDsToProjects = (projects: Omit<Project, 'id'>[]): Project[] => {
   return projects.map((project, index) => ({
     id: generateHash(`${project.title}-${index}`), // Generar un ID único basado en el título y el índice

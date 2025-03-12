@@ -1,20 +1,3 @@
-export interface Footer {
-  about: string;
-  contact: Contact;
-  socials: Socials;
-  year: number;
-}
-interface Contact {
-  email: string;
-  phone: string;
-  address: string;
-}
-interface Socials {
-  facebook: string;
-  instagram: string;
-  linkedin: string;
-}
-
 const contact: Contact = {
   email: 'example@example.com',
   phone: '123-456-7890',
