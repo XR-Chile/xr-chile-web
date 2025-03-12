@@ -1,5 +1,6 @@
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
+import { Category } from "@/app/data/enums";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
