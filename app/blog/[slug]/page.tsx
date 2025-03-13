@@ -1,11 +1,13 @@
 import { notFound } from 'next/navigation';
 import { blogPosts } from '@/app/data/blogPosts';
-import React from 'react';
 import Image from 'next/image';
 
-export default function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
-  // Desenvolver la promesa `params` usando React.use
-  const { slug } = React.use(params);
+export default async function BlogPostPage({
+  params
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params;
 
   const post = blogPosts.find((post) => post.slug === slug);
 
