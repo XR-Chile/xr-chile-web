@@ -44,16 +44,20 @@ const textBoxes = [
 export const MainCarousel = () => (
   <Carousel className="w-auto items-center h-full">
     <CarouselContent className='-ml-4'>
-      {textBoxes.map(({ title, description, image }, index) => (
-        <CarouselItem key={index} className='pl-0'>
-          <Card className="shadow-none rounded-none border-b-4 bg-cover bg-center relative w-full h-svh border-none" style={{ backgroundImage: `url(${image.src})` }}>
-            <CardContent className="absolute left-10 bottom-20 items-center justify-center flex-col bg-bg rounded bg-overlay shadow-md hover:shadow-lg transition-shadow">
-              <h2 className="text-3xl font-base text-bg">{title}</h2>
-              <p className='text-bg'>{description + index}</p>
-            </CardContent>
-          </Card>
-        </CarouselItem>
-      ))}
+
+      {
+        textBoxes.map(({ title, description, image }, index) => (
+          <CarouselItem key={index} className='pl-0'>
+            <Card className="shadow-none rounded-none border-b-4 bg-cover bg-center relative w-full h-svh border-none" style={{ backgroundImage: `url(${image.src})` }}>
+              <CardContent className="absolute left-10 bottom-20 items-center justify-center flex-col bg-bg rounded bg-overlay shadow-md hover:shadow-lg transition-shadow">
+                <h2 className="text-3xl font-base text-bg">{title}</h2>
+                <p className='text-bg'>{description + index}</p>
+              </CardContent>
+            </Card>
+          </CarouselItem>
+        ))
+      }
+
     </CarouselContent>
     <CarouselPrevious className='left-5 size-16' />
     <CarouselNext className='right-5 size-16' />
