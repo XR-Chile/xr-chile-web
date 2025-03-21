@@ -9,8 +9,15 @@ import {
 } from '@/components/ui/carousel'
 import { carouselItems } from '@/app/data/mainCarouselItems'
 
+{/* TODO: Que el carousel tenga un hipervinculo a la seccion 'sobre nosotros' dentro del footer solo si es el primer contenido del mismo. */}
+
 export const MainCarousel = () => (
-  <Carousel className="w-auto items-center h-full">
+  <Carousel 
+    opts={{
+      align: "start",
+      loop: true,
+    }}
+    className="w-auto items-center h-full">
     <CarouselContent className='-ml-4'>
       {carouselItems.map(({ title, description, image }, index) => (
         <CarouselItem key={index} className='pl-0'>
