@@ -1,6 +1,5 @@
 "use client"
 import { Card, CardContent } from '@/components/ui/card'
-import { textBoxes } from '@/app/data/textBoxes'
 import {
   Carousel,
   CarouselContent,
@@ -8,22 +7,28 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
+import { carouselItems } from '@/app/data/mainCarouselItems'
+
+{/* TODO: Que el carousel tenga un hipervinculo a la seccion 'sobre nosotros' dentro del footer solo si es el primer contenido del mismo. */}
 
 export const MainCarousel = () => (
-  <Carousel className="w-auto items-center h-full">
+  <Carousel 
+    opts={{
+      align: "start",
+      loop: true,
+    }}
+    className="w-auto items-center h-full">
     <CarouselContent className='-ml-4'>
-      {
-        textBoxes.map(({ title, description, image }, index) => (
-          <CarouselItem key={index} className='pl-0'>
-            <Card className="shadow-none rounded-none border-b-4 bg-cover bg-center relative w-full h-svh border-none" style={{ backgroundImage: `url(${image.src})` }}>
-              <CardContent className="absolute left-10 bottom-20 items-center justify-center flex-col bg-bg rounded bg-overlay shadow-md hover:shadow-lg transition-shadow">
-                <h2 className="text-3xl font-base text-bg">{title}</h2>
-                <p className='text-bg'>{description + index}</p>
-              </CardContent>
-            </Card>
-          </CarouselItem>
-        ))
-      }
+      {carouselItems.map(({ title, description, image }, index) => (
+        <CarouselItem key={index} className='pl-0'>
+          <Card className="shadow-none rounded-none border-b-4 bg-cover bg-center relative w-full h-svh border-none" style={{ backgroundImage: `url(${image})` }}>
+            <CardContent className="absolute left-10 bottom-20 items-center justify-center flex-col bg-bg rounded bg-overlay shadow-md hover:shadow-lg transition-shadow">
+              <h2 className="text-3xl font-base text-bg">{title}</h2>
+              <p className='text-bg'>{description}</p>
+            </CardContent>
+          </Card>
+        </CarouselItem>
+      ))}
     </CarouselContent>
     <CarouselPrevious className='left-5 size-16' />
     <CarouselNext className='right-5 size-16' />

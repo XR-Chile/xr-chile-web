@@ -1,16 +1,12 @@
 import { notFound } from 'next/navigation';
 import { cameras, pico } from '@/app/data/products';
 import { Category } from '@/app/data/enums';
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
-export default async function ProductPage({
-  params
-}: {
-  params: Promise<{ category: Category; id: string }>
-}) {
-
-  const { category, id } = await params
+export default function ProductPage({ params }: { params: Promise<{ category: Category; id: string }> }) {
+  const { category, id } = React.use(params);
   const productId = parseInt(id, 10);
 
   let productList: Product[] = [];
