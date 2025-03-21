@@ -9,8 +9,6 @@ import {
 } from '@/components/ui/carousel'
 import { carouselItems } from '@/app/data/mainCarouselItems'
 
-{/* TODO: Que el carousel tenga un hipervinculo a la seccion 'sobre nosotros' dentro del footer solo si es el primer contenido del mismo. */}
-
 export const MainCarousel = () => (
   <Carousel 
     opts={{

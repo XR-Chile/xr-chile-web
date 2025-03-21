@@ -1,10 +1,8 @@
-{/*TODO: Un boton popup de contacto, donde el usuario rellene un formulario*/}
 const contact: Contact = {
   email: 'example@example.com',
   phone: '123-456-7890',
   address: '123 Main St, Anytown, USA'
 }
-{/*TODO: Un boton de WhatsApp el cual vincule a un chat de dicha app*/}
 const socials: Socials = {
   facebook: 'https://www.facebook.com/example',
   instagram: 'https://www.instagram.com/example',
