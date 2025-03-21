@@ -1,16 +1,18 @@
+{/*TODO: Un boton popup de contacto, donde el usuario rellene un formulario*/}
 const contact: Contact = {
   email: 'example@example.com',
   phone: '123-456-7890',
   address: '123 Main St, Anytown, USA'
 }
+{/*TODO: Un boton de WhatsApp el cual vincule a un chat de dicha app*/}
 const socials: Socials = {
   facebook: 'https://www.facebook.com/example',
   instagram: 'https://www.instagram.com/example',
   linkedin: 'https://www.linkedin.com/in/example'
 }
 export const footer: Footer = {
-  about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum nibh, lacinia vel velit vitae, lacinia eleifend nulla. Donec massa metus, facilisis sed diam eget, fermentum porttitor felis. Donec pretium hendrerit placerat. Vivamus mollis libero at ligula luctus pharetra. Morbi ac purus lorem. Curabitur vel egestas leo. Ut placerat non magna ut venenatis. Cras id blandit odio. Integer a varius nibh, id rhoncus sem. Cras ultrices lorem quis egestas ultrices. Sed non ullamcorper leo. Fusce non justo lorem. Nam justo odio, malesuada ac ante ultricies, lobortis tincidunt sem. Etiam congue eget lacus quis posuere. Aenean in enim sed tellus eleifend mollis ut in elit.',
-  contact,
+  about: 'El mundo digital ya no se encuentra atrapado al otro lado de una pantalla, ni tampoco son sólo fantasías virtuales que explorar. La verdadera presencia de interacción digital transcurre en una dimensión por encima de nuestra cotidianidad.<br><br>La Realidad Expandida permite mejorar procesos, agregando nuevas eficiencias, potenciando la calidad del trabajo y el estudio y, por sobre todo, enriqueciendo todo tipo de experiencias.<br><br> Este nuevo contexto trae oportunidades de innovación para las empresas que crean valor mediante la creatividad y la tecnología.<br><br>XR Chile es una consultora especializada en proyectos de Realidad Extendida, con especial foco en la gestión, capacitación, educación, tanto escolar como superior, y el marketing.',
+  contact, 
   socials,
   year: 2024
 }
