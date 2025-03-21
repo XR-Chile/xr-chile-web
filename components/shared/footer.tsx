@@ -2,7 +2,7 @@ import { footer } from '@/app/data/footer';
 import Image from 'next/image';
 
 export const Footer = () => (
-  <div className="flex flex-1 w-full h-max bg-black text-gray-300 border-t-4 border-main"> {/* Contenedor principal con fondo negro */}
+  <div className="w-full h-max bg-black text-gray-300 border-t-4 border-main"> {/* Contenedor principal con fondo negro */}
     <div className="max-w-7xl mx-auto p-8 flex flex-col md:flex-row gap-8 text-lg"> {/* Contenedor centrado */}
       {/* Sección "Sobre nosotros" (ocupa la mitad del espacio) */}
       <div className="flex-1">
