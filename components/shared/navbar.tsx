@@ -28,9 +28,9 @@ export const Navbar = () => {
       {/* Menú para pantallas grandes */}
       <NavigationMenuList className="hidden md:flex space-x-10">
         <NavigationMenuItem>
-          <Link href="/tienda" legacyBehavior passHref>
+          <Link href="/consultor" legacyBehavior passHref>
             <Button className="duration-150">
-              <span className="text-text">Tienda</span>
+              <span className="text-text">Consultor</span>
             </Button>
           </Link>
         </NavigationMenuItem>
@@ -42,12 +42,26 @@ export const Navbar = () => {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
+          <Link href="/equipamiento" legacyBehavior passHref>
+            <Button className="duration-150">
+              <span className="text-text">Equipamiento</span>
+            </Button>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/intervenciones" legacyBehavior passHref>
+            <Button className="duration-150">
+              <span className="text-text">Intervenciones</span>
+            </Button>
+          </Link>
+        </NavigationMenuItem>
+        {/* DE MOMENTO SE MANTIENE OCULTO EL BLOG <NavigationMenuItem>
           <Link href="/blog" legacyBehavior passHref>
             <Button className="duration-150">
               <span className="text-text">Blog</span>
             </Button>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
       </NavigationMenuList>
 
       {/* Ícono de hamburguesa para móviles */}
