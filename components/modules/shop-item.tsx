@@ -1,5 +1,4 @@
 'use client'
-import { Product } from '@/app/data/products';
 import Link from 'next/link';
 import Image from 'next/image';
 

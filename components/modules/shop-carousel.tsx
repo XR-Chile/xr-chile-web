@@ -1,4 +1,3 @@
-import { Product } from '@/app/data/products';
 import { ShopItem } from '@/components/modules/shop-item';
 import { Card, CardContent } from '@/components/ui/card';
 import {
