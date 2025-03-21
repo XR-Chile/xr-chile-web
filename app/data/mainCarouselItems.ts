@@ -1,27 +1,27 @@
 export const carouselItems = [
   {
-    title: 'Test',
-    description: 'Este es el test pequeño y es el ',
+    title: '¿Quiénes somos?',
+    description: 'Tu aliado estratégico.',
     image: '/images/carousel/image1.webp',
   },
   {
-    title: 'Test',
-    description: 'Este es el test un mas largo y es el ',
+    title: 'Agenda con un Consultor',
+    description: '¿Quieres extender tus posibilidades?',
     image: '/images/carousel/image2.webp',
   },
   {
-    title: 'Test',
-    description: 'Este es el test medianamente largo y es el ',
+    title: 'Desarrollo de Proyectos',
+    description: '',
     image: '/images/carousel/image3.jpg',
   },
   {
-    title: 'Test',
-    description: 'Este es el test casi mas largo que los demas y es el ',
+    title: 'Adquisición de equipamiento',
+    description: '',
     image: '/images/carousel/image4.jpg',
   },
   {
-    title: 'Test',
-    description: 'Este test es mas largo en texto que todos los demas y es el test ',
+    title: 'Intervenciones Temporales',
+    description: '',
     image: '/images/carousel/image5.jpg',
   }
 ]

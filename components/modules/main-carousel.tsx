@@ -17,7 +17,7 @@ export const MainCarousel = () => (
           <Card className="shadow-none rounded-none border-b-4 bg-cover bg-center relative w-full h-svh border-none" style={{ backgroundImage: `url(${image})` }}>
             <CardContent className="absolute left-10 bottom-20 items-center justify-center flex-col bg-bg rounded bg-overlay shadow-md hover:shadow-lg transition-shadow">
               <h2 className="text-3xl font-base text-bg">{title}</h2>
-              <p className='text-bg'>{description + index}</p>
+              <p className='text-bg'>{description}</p>
             </CardContent>
           </Card>
         </CarouselItem>
