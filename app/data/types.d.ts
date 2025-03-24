@@ -39,5 +39,6 @@ interface Socials {
   facebook: string;
   instagram: string;
   linkedin: string;
+  whatsapp: string;
 }
 
