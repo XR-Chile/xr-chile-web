@@ -50,6 +50,15 @@ export const Footer = () => (
               className="w-6 h-6 bg-white rounded"
             />
           </a>
+          <a href={footer.socials.whatsapp} target="_blank" rel="noopener noreferrer">
+            <Image
+              src='/icons/whatsapp.svg'
+              width={24}
+              height={24}
+              alt='whatsapp logo'
+              className="w-6 h-6 bg-white rounded"
+            />
+          </a>
         </div>
       </div>
     </section>
