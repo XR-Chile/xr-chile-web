@@ -31,3 +31,6 @@ export const addIDsToProjects = (projects: Omit<Project, 'id'>[]): Project[] => 
   }));
 }
 
+export const getWhatsappNumber = async () => {
+  return process.env.WHATSAPP_NUMBER ?? '56912345678'
+}
