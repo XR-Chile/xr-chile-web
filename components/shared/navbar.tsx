@@ -14,7 +14,7 @@ import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react'; // Importamos íconos de hamburguesa y cierre
 
 export const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false); // Estado para controlar el menú móvil
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
     <NavigationMenu className="rounded-none border-0 border-b-4 justify-between md:px-[120px] py-[14px] sticky top-0">
@@ -35,21 +35,21 @@ export const Navbar = () => {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/proyectos" legacyBehavior passHref>
+          <Link href="/projects" legacyBehavior passHref>
             <Button className="duration-150">
               <span className="text-text">Proyectos</span>
             </Button>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/equipamiento" legacyBehavior passHref>
+          <Link href="/equipment" legacyBehavior passHref>
             <Button className="duration-150">
               <span className="text-text">Equipamiento</span>
             </Button>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/intervenciones" legacyBehavior passHref>
+          <Link href="/interventions" legacyBehavior passHref>
             <Button className="duration-150">
               <span className="text-text">Intervenciones</span>
             </Button>

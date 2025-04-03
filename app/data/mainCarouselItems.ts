@@ -15,18 +15,18 @@ export const carouselItems = [
     title: 'Desarrollo de Proyectos',
     description: '',
     image: '/images/carousel/image3.jpg',
-    pathTo: '/proyectos'
+    pathTo: '/projects'
   },
   {
     title: 'Adquisición de equipamiento',
     description: '',
     image: '/images/carousel/image4.jpg',
-    pathTo: '/equipamiento'
+    pathTo: '/equipment'
   },
   {
     title: 'Intervenciones Temporales',
     description: '',
     image: '/images/carousel/image5.jpg',
-    pathTo: '/intervenciones'
+    pathTo: '/interventions'
   }
 ]
