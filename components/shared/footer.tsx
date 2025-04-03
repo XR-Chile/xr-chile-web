@@ -3,15 +3,12 @@ import Image from 'next/image';
 
 export const Footer = () => (
   <footer className="w-full bg-black text-gray-300 border-t-4 border-main p-8 flex flex-col md:flex-row gap-8 text-lg"> {/* Contenedor principal con fondo negro */}
-    {/* Sección "Sobre nosotros" (ocupa la mitad del espacio) */}
     <section className="flex-1">
       <h2 className="text-2xl font-bold mb-4 text-white">Sobre nosotros</h2>
       <div className="text-gray" dangerouslySetInnerHTML={{ __html: footer.about }} />
     </section>
 
-    {/* Columna compartida para "Contacto" y "Redes Sociales" (ocupa la otra mitad) */}
     <section className="flex-1 flex flex-col gap-8">
-      {/* Sección "Contacto" */}
       <div>
         <h2 className="text-2xl font-bold mb-4 text-white">Contacto</h2>
         <p className="text-gray">Email: {footer.contact.email}</p>
@@ -19,7 +16,6 @@ export const Footer = () => (
         <p className="text-gray">Dirección: {footer.contact.address}</p>
       </div>
 
-      {/* Sección "Redes Sociales" */}
       <div>
         <h2 className="text-2xl font-bold mb-4 text-white">Redes Sociales</h2>
         <div className="flex gap-6">
