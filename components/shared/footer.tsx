@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const Footer = () => (
   <footer className="w-full bg-black text-gray-300 border-t-4 border-main p-8 flex flex-col md:flex-row gap-8 text-lg"> {/* Contenedor principal con fondo negro */}
-    <section className="flex-1">
+    <section id='about' className="flex-1">
       <h2 className="text-2xl font-bold mb-4 text-white">Sobre nosotros</h2>
       <div className="text-gray" dangerouslySetInnerHTML={{ __html: footer.about }} />
     </section>
