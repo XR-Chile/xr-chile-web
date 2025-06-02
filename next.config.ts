@@ -1,11 +1,12 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
   webpack(config) {
     // Agregar la regla para manejar archivos SVG con @svgr/webpack
     config.module.rules.push({
       test: /\.svg$/,
-      use: ['@svgr/webpack'],
+      use: ["@svgr/webpack"],
     });
 
     return config;
@@ -14,9 +15,9 @@ const nextConfig: NextConfig = {
     turbo: {
       rules: {
         // Configuración experimental de Turbopack para SVG
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.svg',
+        "*.svg": {
+          loaders: ["@svgr/webpack"],
+          as: "*.svg",
         },
       },
     },
@@ -24,3 +25,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
