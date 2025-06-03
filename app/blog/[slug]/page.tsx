@@ -9,9 +9,9 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogPostPage({
-  params
+  params,
 }: {
-  params: Promise<{ slug: string }>
+  params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
 
@@ -23,7 +23,7 @@ export default async function BlogPostPage({
 
   return (
     <section className="p-8 w-full flex flex-col items-center">
-      <div className='text-center'>
+      <div className="text-center">
         <h1 className="text-6xl font-bold mb-2">{post.title}</h1>
         <p className="text-gray-500 mt-2 font-bold mb-12">{post.date}</p>
       </div>

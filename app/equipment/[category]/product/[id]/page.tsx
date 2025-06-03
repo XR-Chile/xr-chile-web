@@ -56,7 +56,10 @@ export default function ProductPage({
             <h1 className="text-4xl font-bold">{product.name}</h1>
             <p className="text-2xl mt-2">${product.price}</p>
           </div>
-          <Button className="px-6 py-3 rounded-lg text-xl duration-150"> Comprar </Button>
+          <Button className="px-6 py-3 rounded-lg text-xl duration-150">
+            {" "}
+            Comprar{" "}
+          </Button>
         </div>
       </div>
     </section>

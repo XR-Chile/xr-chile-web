@@ -9,12 +9,11 @@ export async function generateStaticParams() {
 }
 
 export default async function ProjectPage({
-  params
+  params,
 }: {
-  params: Promise<{ id: string }>
+  params: Promise<{ id: string }>;
 }) {
-
-  const { id } = await params
+  const { id } = await params;
   const project = projects.find((p) => p.id === Number(id));
 
   if (!project) {
@@ -23,7 +22,7 @@ export default async function ProjectPage({
 
   return (
     <div className="p-8 w-full flex flex-col items-center">
-      <div className='text-center'>
+      <div className="text-center">
         <h1 className="text-6xl font-bold mb-2">{project.title}</h1>
       </div>
       <div className="w-full max-w-7xl h-64 md:h-96 lg:h-128 relative">
