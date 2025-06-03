@@ -5,7 +5,7 @@ const isGithubPages = process.env.GITHUB_PAGES === "true";
 const nextConfig: NextConfig = {
   output: "export",
   basePath: isGithubPages ? "/xr-chile-web" : "",
-  assetPrefix: isGithubPages ? "/xr-chile-web" : "",
+  assetPrefix: isGithubPages ? "/xr-chile-web/" : "",
   webpack(config) {
     // Agregar la regla para manejar archivos SVG con @svgr/webpack
     config.module.rules.push({
