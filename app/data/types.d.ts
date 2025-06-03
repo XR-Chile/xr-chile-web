@@ -1,5 +1,5 @@
 interface Project {
-  id: number
+  id: number;
   title: string;
   description: string;
   image: string;
@@ -41,4 +41,3 @@ interface Socials {
   linkedin: string;
   whatsapp: string;
 }
-

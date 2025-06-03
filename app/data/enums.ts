@@ -1,4 +1,4 @@
 export enum Category {
-  Camera = 'camera',
-  PICO = 'pico'
+  Camera = "camera",
+  PICO = "pico",
 }

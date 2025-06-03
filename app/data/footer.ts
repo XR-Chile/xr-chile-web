@@ -1,21 +1,22 @@
-import { getWhatsappNumber } from "@/lib/utils"
+import { getWhatsappNumber } from "@/lib/utils";
 
-const whatsappNumber = await getWhatsappNumber()
+const whatsappNumber = await getWhatsappNumber();
 
 const contact: Contact = {
-  email: 'example@example.com',
-  phone: '123-456-7890',
-  address: '123 Main St, Anytown, USA'
-}
+  email: "example@example.com",
+  phone: "123-456-7890",
+  address: "123 Main St, Anytown, USA",
+};
 const socials: Socials = {
-  facebook: 'https://www.facebook.com/example',
-  instagram: 'https://www.instagram.com/example',
-  linkedin: 'https://www.linkedin.com/in/example',
-  whatsapp: `https://api.whatsapp.com/send/?phone=${whatsappNumber}`
-}
+  facebook: "https://www.facebook.com/example",
+  instagram: "https://www.instagram.com/example",
+  linkedin: "https://www.linkedin.com/in/example",
+  whatsapp: `https://api.whatsapp.com/send/?phone=${whatsappNumber}`,
+};
 export const footer: Footer = {
-  about: 'El mundo digital ya no se encuentra atrapado al otro lado de una pantalla, ni tampoco son sólo fantasías virtuales que explorar. La verdadera presencia de interacción digital transcurre en una dimensión por encima de nuestra cotidianidad.<br><br>La Realidad Expandida permite mejorar procesos, agregando nuevas eficiencias, potenciando la calidad del trabajo y el estudio y, por sobre todo, enriqueciendo todo tipo de experiencias.<br><br> Este nuevo contexto trae oportunidades de innovación para las empresas que crean valor mediante la creatividad y la tecnología.<br><br>XR Chile es una consultora especializada en proyectos de Realidad Extendida, con especial foco en la gestión, capacitación, educación, tanto escolar como superior, y el marketing.',
+  about:
+    "El mundo digital ya no se encuentra atrapado al otro lado de una pantalla, ni tampoco son sólo fantasías virtuales que explorar. La verdadera presencia de interacción digital transcurre en una dimensión por encima de nuestra cotidianidad.<br><br>La Realidad Expandida permite mejorar procesos, agregando nuevas eficiencias, potenciando la calidad del trabajo y el estudio y, por sobre todo, enriqueciendo todo tipo de experiencias.<br><br> Este nuevo contexto trae oportunidades de innovación para las empresas que crean valor mediante la creatividad y la tecnología.<br><br>XR Chile es una consultora especializada en proyectos de Realidad Extendida, con especial foco en la gestión, capacitación, educación, tanto escolar como superior, y el marketing.",
   contact,
   socials,
-  year: 2024
-}
+  year: 2024,
+};
