@@ -1,8 +1,8 @@
-'Use client'
-import Link from 'next/link';
-import { Project } from '@/app/data/projects';
-import { Card } from '../ui/card';
-import Image from 'next/image';
+"Use client";
+
+import Link from "next/link";
+import { Card } from "../ui/card";
+import Image from "next/image";
 
 export const ProjectCard = ({ project }: { project: Project }) => {
   return (
@@ -13,7 +13,8 @@ export const ProjectCard = ({ project }: { project: Project }) => {
           alt={project.title}
           width={400}
           height={200}
-          className="w-full h-48 object-cover rounded-t-lg" />
+          className="w-full h-48 object-cover rounded-t-lg"
+        />
         <div className="p-4">
           <h2 className="text-xl font-semibold">{project.title}</h2>
           <h3 className="text-gray-600 mt-2">{project.description}</h3>
