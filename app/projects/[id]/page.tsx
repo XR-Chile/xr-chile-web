@@ -1,6 +1,12 @@
-import { notFound } from 'next/navigation';
-import { projects } from '@/app/data/projects';
-import Image from 'next/image';
+import { notFound } from "next/navigation";
+import { projects } from "@/app/data/projects";
+import Image from "next/image";
+
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    id: project.id.toString(),
+  }));
+}
 
 export default async function ProjectPage({
   params

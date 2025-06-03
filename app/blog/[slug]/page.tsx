@@ -1,6 +1,12 @@
-import { notFound } from 'next/navigation';
-import { blogPosts } from '@/app/data/blogPosts';
-import Image from 'next/image';
+import { notFound } from "next/navigation";
+import { blogPosts } from "@/app/data/blogPosts";
+import Image from "next/image";
+
+export async function generateStaticParams() {
+  const uniqueSlugs = Array.from(new Set(blogPosts.map((post) => post.slug)));
+
+  return uniqueSlugs.map((slug) => ({ slug }));
+}
 
 export default async function BlogPostPage({
   params

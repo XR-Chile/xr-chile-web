@@ -1,11 +1,24 @@
-import { notFound } from 'next/navigation';
-import { cameras, pico } from '@/app/data/products';
-import { Category } from '@/app/data/enums';
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import Image from 'next/image';
+import { notFound } from "next/navigation";
+import { cameras, pico } from "@/app/data/products";
+import { Category } from "@/app/data/enums";
+import React from "react";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
-export default function ProductPage({ params }: { params: Promise<{ category: Category; id: string }> }) {
+export async function generateStaticParams() {
+  const allProducts = [...cameras, ...pico];
+
+  return allProducts.map((product) => ({
+    category: product.category.toString(),
+    id: product.id.toString(),
+  }));
+}
+
+export default function ProductPage({
+  params,
+}: {
+  params: Promise<{ category: Category; id: string }>;
+}) {
   const { category, id } = React.use(params);
   const productId = parseInt(id, 10);
 
