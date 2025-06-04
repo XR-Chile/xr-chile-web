@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { carouselItems } from "@/app/data/mainCarouselItems";
+import { carouselItems } from "@/lib/data/mainCarouselItems";
 import Link from "next/link";
 
 export const MainCarousel = () => (

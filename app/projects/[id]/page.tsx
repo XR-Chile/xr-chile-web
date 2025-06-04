@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { projects } from "@/app/data/projects";
+import { projects } from "@/lib/data/projects";
 import Image from "next/image";
 
 export async function generateStaticParams() {

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { blogPosts } from "@/app/data/blogPosts";
+import { blogPosts } from "@/lib/data/blogPosts";
 import Image from "next/image";
 
 export async function generateStaticParams() {

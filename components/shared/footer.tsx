@@ -1,4 +1,4 @@
-import { footer } from "@/app/data/footer";
+import { footer } from "@/lib/data/footer";
 import Image from "next/image";
 
 export const Footer = () => (

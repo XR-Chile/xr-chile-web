@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { cameras, pico } from "@/app/data/products";
-import { Category } from "@/app/data/enums";
+import { cameras, pico } from "@/lib/data/products";
+import { Category } from "@/lib/data/enums";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
