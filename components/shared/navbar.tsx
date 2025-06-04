@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import * as React from 'react';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import * as React from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu';
-import { cn } from '@/lib/utils';
-import { Menu, X } from 'lucide-react'; // Importamos íconos de hamburguesa y cierre
+} from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -79,21 +79,30 @@ export const Navbar = () => {
           <div className="flex flex-col space-y-4 p-4">
             <NavigationMenuItem>
               <Link href="/tienda" legacyBehavior passHref>
-                <Button className="w-full duration-150" onClick={() => setIsMenuOpen(false)}>
+                <Button
+                  className="w-full duration-150"
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   <span className="text-text">Tienda</span>
                 </Button>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/proyectos" legacyBehavior passHref>
-                <Button className="w-full duration-150" onClick={() => setIsMenuOpen(false)}>
+                <Button
+                  className="w-full duration-150"
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   <span className="text-text">Proyectos</span>
                 </Button>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/blog" legacyBehavior passHref>
-                <Button className="w-full duration-150" onClick={() => setIsMenuOpen(false)}>
+                <Button
+                  className="w-full duration-150"
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   <span className="text-text">Blog</span>
                 </Button>
               </Link>
@@ -105,26 +114,28 @@ export const Navbar = () => {
   );
 };
 
-const ListItem = React.forwardRef<HTMLAnchorElement, React.ComponentPropsWithoutRef<'a'>>(
-  ({ className, title, children, ...props }, ref) => {
-    return (
-      <li>
-        <NavigationMenuLink asChild>
-          <a
-            ref={ref}
-            className={cn(
-              'hover:bg-accent block text-mtext select-none space-y-1 rounded-base border-2 border-transparent p-3 leading-none no-underline outline-none transition-colors hover:border-border dark:hover:border-darkBorder',
-              className,
-            )}
-            {...props}
-          >
-            <div className="text-base font-heading leading-none">{title}</div>
-            <p className="text-muted-foreground font-base line-clamp-2 text-sm leading-snug">
-              {children}
-            </p>
-          </a>
-        </NavigationMenuLink>
-      </li>
-    );
-  });
-ListItem.displayName = 'ListItem';
+const ListItem = React.forwardRef<
+  HTMLAnchorElement,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "hover:bg-accent block text-mtext select-none space-y-1 rounded-base border-2 border-transparent p-3 leading-none no-underline outline-none transition-colors hover:border-border dark:hover:border-darkBorder",
+            className,
+          )}
+          {...props}
+        >
+          <div className="text-base font-heading leading-none">{title}</div>
+          <p className="text-muted-foreground font-base line-clamp-2 text-sm leading-snug">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  );
+});
+ListItem.displayName = "ListItem";
