@@ -28,7 +28,7 @@ export const Footer = () => (
             rel="noopener noreferrer"
           >
             <Image
-              src="/icons/facebook/facebook-24.svg"
+              src="icons/facebook/facebook-24.svg"
               width={24}
               height={24}
               alt="facebook"
@@ -41,7 +41,7 @@ export const Footer = () => (
             rel="noopener noreferrer"
           >
             <Image
-              src="/icons/instagram/instagram-24.svg"
+              src="icons/instagram/instagram-24.svg"
               width={24}
               height={24}
               alt="instagram"
@@ -54,7 +54,7 @@ export const Footer = () => (
             rel="noopener noreferrer"
           >
             <Image
-              src="/icons/linkedin/linkedin-24.svg"
+              src="icons/linkedin/linkedin-24.svg"
               width={24}
               height={24}
               alt="linkedin"
@@ -67,7 +67,7 @@ export const Footer = () => (
             rel="noopener noreferrer"
           >
             <Image
-              src="/icons/whatsapp.svg"
+              src="icons/whatsapp.svg"
               width={24}
               height={24}
               alt="whatsapp logo"
