@@ -16,6 +16,7 @@ const socials: Socials = {
 export const footer: Footer = {
   about:
     "El mundo digital ya no se encuentra atrapado al otro lado de una pantalla, ni tampoco son sólo fantasías virtuales que explorar. La verdadera presencia de interacción digital transcurre en una dimensión por encima de nuestra cotidianidad.<br><br>La Realidad Expandida permite mejorar procesos, agregando nuevas eficiencias, potenciando la calidad del trabajo y el estudio y, por sobre todo, enriqueciendo todo tipo de experiencias.<br><br> Este nuevo contexto trae oportunidades de innovación para las empresas que crean valor mediante la creatividad y la tecnología.<br><br>XR Chile es una consultora especializada en proyectos de Realidad Extendida, con especial foco en la gestión, capacitación, educación, tanto escolar como superior, y el marketing.",
+  shortAbout:"XR Chile es una consultora especializada en proyectos de Realidad Extendida, con especial foco en la gestión, capacitación, educación, tanto escolar como superior, y el marketing.",
   contact,
   socials,
   year: 2024,

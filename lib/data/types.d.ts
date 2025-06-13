@@ -25,6 +25,7 @@ interface Product {
 
 interface Footer {
   about: string;
+  shortAbout: string;
   contact: Contact;
   socials: Socials;
   year: number;

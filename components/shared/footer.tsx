@@ -8,7 +8,7 @@ export const Footer = () => (
       <h2 className="text-2xl font-bold mb-4 text-white">Sobre nosotros</h2>
       <div
         className="text-gray"
-        dangerouslySetInnerHTML={{ __html: footer.about }}
+        dangerouslySetInnerHTML={{ __html: footer.shortAbout }}
       />
     </section>
     <section className="flex-1 flex flex-col gap-8 md:mr-40 md:ml-20">
