@@ -35,6 +35,14 @@ export const Navbar = () => {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
+          <Link href="/blog" legacyBehavior passHref>
+            <Button className="duration-150">
+              <span className="text-text">Blog</span>
+            </Button>
+          </Link>
+        </NavigationMenuItem>
+        {/* DE MOMENTO SE MANTIENE OCULTO PROYECTOS, EQUIPAMIENTO E INTERVENCIONES
+        <NavigationMenuItem>
           <Link href="/projects" legacyBehavior passHref>
             <Button className="duration-150">
               <span className="text-text">Proyectos</span>
@@ -52,16 +60,10 @@ export const Navbar = () => {
           <Link href="/interventions" legacyBehavior passHref>
             <Button className="duration-150">
               <span className="text-text">Intervenciones</span>
-            </Button>
-          </Link>
-        </NavigationMenuItem>
-        {/* DE MOMENTO SE MANTIENE OCULTO EL BLOG <NavigationMenuItem>
-          <Link href="/blog" legacyBehavior passHref>
-            <Button className="duration-150">
-              <span className="text-text">Blog</span>
-            </Button>
-          </Link>
-        </NavigationMenuItem> */}
+              </Button>
+              </Link>
+              </NavigationMenuItem>
+              */}
       </NavigationMenuList>
 
       {/* Ícono de hamburguesa para móviles */}
@@ -78,22 +80,12 @@ export const Navbar = () => {
         <div className="md:hidden absolute top-22 left-0 right-0 bg-main border-b-4 border-border z-50">
           <div className="flex flex-col space-y-4 p-4">
             <NavigationMenuItem>
-              <Link href="/tienda" legacyBehavior passHref>
+              <Link href="/consultoria" legacyBehavior passHref>
                 <Button
                   className="w-full duration-150"
                   onClick={() => setIsMenuOpen(false)}
-                >
-                  <span className="text-text">Tienda</span>
-                </Button>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/proyectos" legacyBehavior passHref>
-                <Button
-                  className="w-full duration-150"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <span className="text-text">Proyectos</span>
+                  >
+                  <span className="text-text">Consultoría</span>
                 </Button>
               </Link>
             </NavigationMenuItem>
@@ -102,11 +94,43 @@ export const Navbar = () => {
                 <Button
                   className="w-full duration-150"
                   onClick={() => setIsMenuOpen(false)}
-                >
+                  >
                   <span className="text-text">Blog</span>
                 </Button>
               </Link>
             </NavigationMenuItem>
+                  {/* DE MOMENTO SE MANTIENE OCULTO PROYECTOS, EQUIPAMIENTO E INTERVENCIONES
+                  <NavigationMenuItem>
+                    <Link href="/equipment" legacyBehavior passHref>
+                      <Button
+                        className="w-full duration-150"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <span className="text-text">Equipamiento</span>
+                      </Button>
+                    </Link>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <Link href="/proyectos" legacyBehavior passHref>
+                      <Button
+                        className="w-full duration-150"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <span className="text-text">Proyectos</span>
+                      </Button>
+                    </Link>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <Link href="/interventions" legacyBehavior passHref>
+                      <Button
+                        className="w-full duration-150"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <span className="text-text">Intervenciones</span>
+                      </Button>
+                    </Link>
+                  </NavigationMenuItem>
+                   */}
           </div>
         </div>
       )}
