@@ -10,7 +10,7 @@ export default function Consultoria() {
         <main>
             <h1 className={titles + background + "mb-20 mt-16"}>Consultoría</h1>
             <div className={background + "w-full max-w-7xl mx-auto gap-6 mb-20 p-8 grid grid-cols-2"}>
-                {/* GRACIAS NEXTJS POR HACER UNA CLASE ASI DE AWEONA QUE NECESITE TENER UN OBJ PADRE CON POSITION ASIGNADO */}
+                {/* Tiene un div padre para manejar de buena manera el fill */}
                 <div className="relative">
                 <Image 
                     src={image}
