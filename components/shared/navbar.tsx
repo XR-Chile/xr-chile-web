@@ -28,9 +28,9 @@ export const Navbar = () => {
       {/* Menú para pantallas grandes */}
       <NavigationMenuList className="hidden md:flex space-x-10">
         <NavigationMenuItem>
-          <Link href="/consultor" legacyBehavior passHref>
+          <Link href="/consultoria" legacyBehavior passHref>
             <Button className="duration-150">
-              <span className="text-text">Consultor</span>
+              <span className="text-text">Consultoría</span>
             </Button>
           </Link>
         </NavigationMenuItem>
