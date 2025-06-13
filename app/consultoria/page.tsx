@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const titles = "text-6xl font-bold text-center p-4 ";
 const background = "shadow-md bg-white ";
-const image = "images/consultoria/post1.png";
+const image = "images/consultoria/nosotros.png";
 
 export default function Consultoria() {
     return (
