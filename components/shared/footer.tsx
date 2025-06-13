@@ -2,21 +2,30 @@ import { footer } from "@/lib/data/footer";
 import Image from "next/image";
 
 export const Footer = () => (
-  <footer className="w-full bg-black text-gray-300 border-t-4 border-main p-8 flex flex-col md:flex-row gap-8 text-lg">
+  <footer className="w-full bg-black text-gray-300 border-t-4 border-main p-8 flex flex-col-reverse md:flex-row gap-8 text-lg">
     {/* Contenedor principal con fondo negro */}
-    <section id="about" className="flex-1">
+    <section id="about" className="flex-1 md:ml-40 md:mr-20">
       <h2 className="text-2xl font-bold mb-4 text-white">Sobre nosotros</h2>
       <div
         className="text-gray"
         dangerouslySetInnerHTML={{ __html: footer.about }}
       />
     </section>
-    <section className="flex-1 flex flex-col gap-8">
+    <section className="flex-1 flex flex-col gap-8 md:mr-40 md:ml-20">
       <div>
         <h2 className="text-2xl font-bold mb-4 text-white">Contacto</h2>
-        <p className="text-gray">Email: {footer.contact.email}</p>
-        <p className="text-gray">Teléfono: {footer.contact.phone}</p>
-        <p className="text-gray">Dirección: {footer.contact.address}</p>
+        <p className="text-gray">
+          <a className="font-semibold text-white">Email: </a> 
+          {footer.contact.email}
+        </p>
+        <p className="text-gray">
+          <a className="font-semibold text-white">Teléfono: </a> 
+          {footer.contact.phone}
+        </p>
+        <p className="text-gray">
+          <a className="font-semibold text-white">Dirección: </a> 
+          {footer.contact.address}
+        </p>
       </div>
 
       <div>
