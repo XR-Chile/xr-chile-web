@@ -17,7 +17,7 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <NavigationMenu className="rounded-none border-0 border-b-4 justify-between md:px-[120px] py-[14px] sticky top-0">
+    <NavigationMenu className="rounded-none border-0 border-b-4 justify-between md:px-[120px] py-[14px] sticky top-0 z-20">
       {/* Logo */}
       <Link href="/" legacyBehavior passHref>
         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -84,7 +84,7 @@ export const Navbar = () => {
                 <Button
                   className="w-full duration-150"
                   onClick={() => setIsMenuOpen(false)}
-                  >
+                >
                   <span className="text-text">Consultoría</span>
                 </Button>
               </Link>
@@ -94,12 +94,12 @@ export const Navbar = () => {
                 <Button
                   className="w-full duration-150"
                   onClick={() => setIsMenuOpen(false)}
-                  >
+                >
                   <span className="text-text">Blog</span>
                 </Button>
               </Link>
             </NavigationMenuItem>
-                  {/* DE MOMENTO SE MANTIENE OCULTO PROYECTOS, EQUIPAMIENTO E INTERVENCIONES
+            {/* DE MOMENTO SE MANTIENE OCULTO PROYECTOS, EQUIPAMIENTO E INTERVENCIONES
                   <NavigationMenuItem>
                     <Link href="/equipment" legacyBehavior passHref>
                       <Button
@@ -149,7 +149,7 @@ const ListItem = React.forwardRef<
           ref={ref}
           className={cn(
             "hover:bg-accent block text-mtext select-none space-y-1 rounded-base border-2 border-transparent p-3 leading-none no-underline outline-none transition-colors hover:border-border dark:hover:border-darkBorder",
-            className,
+            className
           )}
           {...props}
         >
