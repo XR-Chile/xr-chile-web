@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { blogPosts } from "@/lib/data/blogPosts";
 import Image from "next/image";
 
+const background = "shadow-md bg-white ";
+
 export async function generateStaticParams() {
   const uniqueSlugs = Array.from(new Set(blogPosts.map((post) => post.slug)));
 
@@ -22,22 +24,26 @@ export default async function BlogPostPage({
   }
 
   return (
-    <section className="p-8 w-full flex flex-col items-center">
-      <div className="text-center">
+    <main>
+      <div
+        className={
+          background + "text-center sticky top-0 z-10 mb-12 border-b-2"
+        }
+      >
         <h1 className="text-6xl font-bold mb-2">{post.title}</h1>
-        <p className="text-gray-500 mt-2 font-bold mb-12">{post.date}</p>
+        <p className="text-gray-500 mt-2 font-bold">{post.date}</p>
       </div>
-      <div className="w-full max-w-7xl h-64 md:h-96 lg:h-128 relative">
-        <Image
-          src={post.image}
-          alt={post.title}
-          fill
-          className="object-cover"
-        />
-      </div>
-      <div className="prose mt-6 max-w-3xl w-full">
+      <div
+        className={
+          background +
+          "w-full max-w-7xl mx-auto gap-6 mb-20 p-8 grid grid-rows-2"
+        }
+      >
+        <div className="h-64 md:h-96 lg:h-128 relative z-0">
+          <Image src={post.image} alt={post.title} fill objectFit="cover" />
+        </div>
         <p>{post.content}</p>
       </div>
-    </section>
+    </main>
   );
 }
