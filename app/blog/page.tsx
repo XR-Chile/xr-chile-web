@@ -2,7 +2,7 @@ import { blogPosts } from "@/lib/data/blogPosts";
 import { BlogPostCard } from "@/components/modules/blog-post-card";
 
 const titles = "text-6xl font-bold text-center p-4 ";
-const background = "shadow-md bg-white "
+const background = "shadow-md bg-white ";
 
 export default function BlogPage() {
   return (
