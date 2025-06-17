@@ -10,7 +10,7 @@ import ContactForm from "@/components/modules/contact-form";
 
 const titles = "text-6xl font-bold text-center p-4 ";
 const background = "shadow-md bg-white ";
-const image = "images/consultoria/nosotros.png";
+const image = "images/consultoria/nosotros.webp";
 
 export default function Consultoria() {
   return (

@@ -3,12 +3,12 @@ import { Category } from "./enums";
 
 export const cameras: Product[] = addCategoryAndIDsToProducts(
   [
-    { name: "Camera 1", price: 100, image: "images/cameras/cam1.png" },
-    { name: "Camera 2", price: 200, image: "images/cameras/cam1.png" },
-    { name: "Camera 3", price: 300, image: "images/cameras/cam1.png" },
-    { name: "Camera 4", price: 400, image: "images/cameras/cam1.png" },
-    { name: "Camera 5", price: 400, image: "images/cameras/cam1.png" },
-    { name: "Camera 6", price: 400, image: "images/cameras/cam1.png" },
+    { name: "Camera 1", price: 100, image: "images/cameras/cam1.webp" },
+    { name: "Camera 2", price: 200, image: "images/cameras/cam1.webp" },
+    { name: "Camera 3", price: 300, image: "images/cameras/cam1.webp" },
+    { name: "Camera 4", price: 400, image: "images/cameras/cam1.webp" },
+    { name: "Camera 5", price: 400, image: "images/cameras/cam1.webp" },
+    { name: "Camera 6", price: 400, image: "images/cameras/cam1.webp" },
   ],
   Category.Camera,
 );

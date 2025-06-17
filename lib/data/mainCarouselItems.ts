@@ -14,19 +14,19 @@ export const carouselItems = [
   {
     title: "Desarrollo de Proyectos",
     description: "",
-    image: "images/carousel/image3.jpg",
+    image: "images/carousel/image3.webp",
     pathTo: "/projects",
   },
   {
     title: "Adquisición de equipamiento",
     description: "",
-    image: "images/carousel/image4.jpg",
+    image: "images/carousel/image4.webp",
     pathTo: "/equipment",
   },
   {
     title: "Intervenciones Temporales",
     description: "",
-    image: "images/carousel/image5.jpg",
+    image: "images/carousel/image5.webp",
     pathTo: "/interventions",
   },
 ];
