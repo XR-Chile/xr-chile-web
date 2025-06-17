@@ -77,7 +77,7 @@ export const Navbar = () => {
 
       {/* Menú móvil (se muestra solo en pantallas pequeñas) */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-22 left-0 right-0 bg-main border-b-4 border-border z-50">
+        <div className="md:hidden absolute top-16 left-0 right-0 bg-main border-b-4 border-border z-50">
           <div className="flex flex-col space-y-4 p-4">
             <NavigationMenuItem>
               <Link href="/consultoria" legacyBehavior passHref>
@@ -149,7 +149,7 @@ const ListItem = React.forwardRef<
           ref={ref}
           className={cn(
             "hover:bg-accent block text-mtext select-none space-y-1 rounded-base border-2 border-transparent p-3 leading-none no-underline outline-none transition-colors hover:border-border dark:hover:border-darkBorder",
-            className
+            className,
           )}
           {...props}
         >
